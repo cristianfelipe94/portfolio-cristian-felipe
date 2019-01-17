@@ -13,3 +13,5 @@ btnClose.addEventListener('click', function () {
     landingPage.setAttribute('class', 'landing-page-wrapper');
     VerticalTabs.setAttribute('class', 'tabs-info-wrapper-hidden');
 });
+
+const varSwump = new Swump();
