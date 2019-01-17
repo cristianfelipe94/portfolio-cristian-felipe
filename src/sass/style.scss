@@ -1,0 +1,95 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-page-wrapper {
+    position: absolute;
+    left: 0;
+    transition: 3s ease-in-out;
+    border-left: 2px solid black;
+}
+
+.landingPageMoves {
+    position: absolute;
+    left: 70vw;
+    top: 0;
+    transition: 3s ease-in-out;
+    border-left: 2px solid black;
+}
+
+.tabs-wrapper {
+    position: relative;
+    width: 100vw;
+}
+
+.sign {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.lang {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+}
+
+.social {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.imgHello, .sayHello {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.tabs-info-wrapper-hidden {
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    background-color: gray;
+    transition: 3s ease-in-out;
+}
+
+.tabs-info-wrapper-showing {
+    height: 100vh;
+    width: 20vw;
+    position: relative;
+    margin: 0;
+    background-color: gray;
+    transition: 3s ease-in-out;
+
+}
+
+.tabs-list {
+    position: absolute;
+    top: 28vh;
+    right: 5vw;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+.tabs-list li {
+    margin: 2rem 0;
+}
+
+.btnAction {
+    position: absolute;
+    top: 50vh;
+    right: 0vw;
+    cursor: pointer;
+}
