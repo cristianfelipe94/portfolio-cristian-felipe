@@ -19,7 +19,7 @@ body {
 
 .landingPageMoves {
   position: absolute;
-  left: 70vw;
+  left: 76vw;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -28,11 +28,13 @@ body {
   color: #D6DBE0;
   transition: 3s ease-in-out; }
   .landingPageMoves .tabs-wrapper .sign {
-    left: -6.5rem;
+    left: -1rem;
     transition: 3s ease-in-out; }
   .landingPageMoves .tabs-wrapper .lang {
     left: 50%;
     transition: 3s ease-in-out; }
+  .landingPageMoves .img-logo {
+    width: 224px; }
 
 .tabs-wrapper {
   position: relative;
@@ -149,7 +151,7 @@ body {
 
 .tabs-info-wrapper-showing {
   height: 100vh;
-  width: 20vw;
+  width: 24vw;
   position: relative;
   margin: 0;
   border-right: 1px solid black;
@@ -181,5 +183,42 @@ body {
   right: 0vw;
   cursor: pointer;
   border: 0; }
+
+.content-page-hidden {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: -100vw;
+  width: 0;
+  right: 0;
+  height: 100vh;
+  overflow-x: auto;
+  z-index: -1;
+  transition: 3s ease-in-out; }
+
+.content-page-showing {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: 0vw;
+  width: 52vw;
+  right: 0;
+  height: 100vh;
+  overflow-x: auto;
+  z-index: 1;
+  transition: 3s ease-in-out; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  transition: 3s ease-in-out; }
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+::-webkit-scrollbar-thumb {
+  background: #252946; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606378; }
 
 /*# sourceMappingURL=style.css.map */
