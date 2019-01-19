@@ -1,3 +1,224 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #D6DBE0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
 
+.landing-page-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: 3s ease-in-out;
+  border-left: 2px solid black;
+  background-color: #563d4e;
+  color: #EFEDEE; }
+
+.landingPageMoves {
+  position: absolute;
+  left: 76vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border-left: 2px solid #fd2d65;
+  background-color: #982C58;
+  color: #D6DBE0;
+  transition: 3s ease-in-out; }
+  .landingPageMoves .tabs-wrapper .sign {
+    left: -1rem;
+    transition: 3s ease-in-out; }
+  .landingPageMoves .tabs-wrapper .lang {
+    left: 50%;
+    transition: 3s ease-in-out; }
+  .landingPageMoves .img-logo {
+    width: 224px; }
+
+.tabs-wrapper {
+  position: relative;
+  max-width: 970px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 1rem; }
+
+.sign {
+  display: inline-block;
+  position: absolute;
+  left: 35%;
+  padding: 1rem;
+  transition: 3s ease-in-out; }
+
+.img-logo {
+  width: 300px;
+  transition: 3s ease-in-out; }
+
+.lang {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  padding: 1rem;
+  transition: 3s ease-in-out;
+  z-index: 1; }
+
+.flag {
+  width: 50px;
+  opacity: 0.5;
+  padding: 0.5rem;
+  cursor: pointer; }
+  .flag:hover {
+    opacity: 1; }
+
+.social {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  z-index: 1;
+  text-align: right; }
+
+.social-icon {
+  font-size: 3em;
+  text-decoration: none;
+  width: 1em;
+  cursor: pointer;
+  color: #D6DBE0;
+  padding: 0.5rem; }
+  .social-icon:hover {
+    color: #fd2d65;
+    transition: 0.6s ease-in-out; }
+
+.img-wrapper {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 0;
+  left: 0;
+  top: 30%;
+  margin: 0 auto; }
+
+.imgHello, .say-hello {
+  cursor: pointer; }
+
+.imgHello {
+  width: 400px;
+  opacity: 1; }
+
+.say-hello-text {
+  border: none;
+  font-size: 1.2em;
+  background-color: #fd2d65;
+  color: #D6DBE0;
+  display: inline-block;
+  margin: 0;
+  width: 43%;
+  text-align: center;
+  transform: rotateZ(0deg);
+  transition: 0.5s ease-in-out; }
+
+.say-hello-btn {
+  color: #D6DBE0;
+  border: none;
+  height: 47px;
+  width: 47px;
+  border-radius: 50% 50%;
+  background-color: #fd2d65;
+  transform: rotateZ(0deg);
+  transition: 0.5s ease-in-out; }
+
+.rotation-anim {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: rotateZ(0deg);
+  transition: 0.6s ease-in-out; }
+  .rotation-anim:hover {
+    transform: rotateZ(-180deg);
+    transition: 0.9s ease-in-out; }
+    .rotation-anim:hover .say-hello-text, .rotation-anim:hover .say-hello-btn {
+      transform: rotateZ(-180deg);
+      transition: 0.9s ease-in-out;
+      background-color: white;
+      color: #fd2d65; }
+
+.tabs-info-wrapper-hidden {
+  position: absolute;
+  height: 100vh;
+  width: 0;
+  background-color: gray;
+  transition: 3s ease-in-out; }
+
+.tabs-info-wrapper-showing {
+  height: 100vh;
+  width: 24vw;
+  position: relative;
+  margin: 0;
+  border-right: 1px solid black;
+  background-color: #2D3255;
+  transition: 3s ease-in-out; }
+
+.tabs-list {
+  position: absolute;
+  top: 28vh;
+  right: 5vw;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  color: #D6DBE0; }
+
+.tabs-list li {
+  margin: 2rem 0; }
+  .tabs-list li:hover {
+    background-color: #252946;
+    transition: 0.6s ease-in-out; }
+
+.tab-items {
+  text-decoration: none;
+  color: #D6DBE0; }
+
+.btnAction {
+  position: absolute;
+  top: 50vh;
+  right: 0vw;
+  cursor: pointer;
+  border: 0; }
+
+.content-page-hidden {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: -100vw;
+  width: 0;
+  right: 0;
+  height: 100vh;
+  overflow-x: auto;
+  z-index: -1;
+  transition: 3s ease-in-out; }
+
+.content-page-showing {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: 0vw;
+  width: 52vw;
+  right: 0;
+  height: 100vh;
+  overflow-x: auto;
+  z-index: 1;
+  transition: 3s ease-in-out; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  transition: 3s ease-in-out; }
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+::-webkit-scrollbar-thumb {
+  background: #252946; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606378; }
 
 /*# sourceMappingURL=style.css.map */
