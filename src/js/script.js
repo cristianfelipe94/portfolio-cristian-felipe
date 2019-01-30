@@ -4,7 +4,6 @@ const VerticalTabs = document.getElementById('js-tabs-info-wrapper');
 const btnClose = document.getElementById('js-btn-close');
 const contentBlock = document.getElementById('content-block');
 
-
 helloBtn.addEventListener('click', function () {
     landingPage.setAttribute('class', 'landingPageMoves');
     VerticalTabs.setAttribute('class', 'tabs-info-wrapper-showing');
