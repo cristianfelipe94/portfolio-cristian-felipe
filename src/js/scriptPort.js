@@ -5,8 +5,6 @@ const btnClose = document.getElementById('js-btn-close');
 const contentBlock = document.getElementById('content-block');
 const sliderTabs = document.getElementById('js-tabs-slider');
 
-
-
 const portFolioContent = document.getElementById('js-wrapper-portfolio');
 
 const imgPortArray = [
