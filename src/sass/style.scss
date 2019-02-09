@@ -298,3 +298,47 @@ body {
         transition: 0.5s ease;
     }
 }
+
+.modal-img-display {
+    display: block;
+    height: 60%;
+    width: 60%;
+    opacity: 1;
+    position: relative;
+    z-index: 50;
+    margin: 5% auto;
+    transition: 2s ease;
+}
+
+.modal-content-display {
+    display: block;
+    opacity: 1;
+    background-color: #1C3144;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 49;
+    transition: 2s ease;
+}
+
+.modal-close-btn {
+    height: 50px;
+    width: 50px;
+    z-index: 51;
+    display: inline-block;
+    position: absolute;
+    top: 2.5%;
+    left: 48%;
+    background-color: red;
+}
+
+.modal-content-hide {
+    display: block;
+    opacity: 0;
+    z-index: -50;
+    background-color: #1C3144;
+    height: 0vh;
+    width: 100vw;
+    position: absolute;
+    transition: 2s ease;
+}
