@@ -1,4 +1,4 @@
-body {
+.content-relativeness {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -151,7 +151,7 @@ body {
   left: -40%;
   width: 25%;
   background-image: linear-gradient(to bottom right, #0d1b59, #0075a0, #27c8d5);
-  transition: 4s ease-in-out; }
+  transition: 6s; }
 
 .tabs-info-wrapper-showing {
   height: 100vh;
@@ -161,12 +161,12 @@ body {
   margin: 0;
   border-right: 1px solid black;
   background-image: linear-gradient(to bottom right, #0d1b59, #0075a0, #27c8d5);
-  transition: 3s ease-in-out; }
+  transition: 4s; }
 
 .tabs-list {
   position: absolute;
   top: 28vh;
-  right: 5vw;
+  right: 0;
   padding: 0;
   display: inline-block;
   list-style: none;
@@ -182,7 +182,7 @@ body {
     background-color: #006593;
     transition: 0.5s ease-in-out; }
 
-.tab-items {
+.tab-items a {
   text-decoration: none;
   color: #D6DBE0; }
 
@@ -194,33 +194,43 @@ body {
   cursor: pointer;
   border: 0; }
 
+@keyframes hiddingContent {
+  0% {
+    z-index: -50; }
+  100% {
+    z-index: -50; } }
 .content-page-hidden {
+  z-index: -50;
+  animation: hiddingContent 3s;
   position: absolute;
-  top: 0;
+  left: -80vw;
   margin: 0 auto;
-  left: -100vw;
-  width: 0;
-  right: 0;
   height: 100vh;
-  overflow-x: auto;
-  z-index: -1;
-  transition: 3s ease-in-out; }
+  width: 44vw;
+  transition: 3s ease-in-out;
+  color: #fd2d65; }
 
+@keyframes showingContent {
+  0% {
+    z-index: -50; }
+  100% {
+    z-index: -50; } }
 .content-page-showing {
+  background-color: black;
+  animation: showingContent 4s;
   position: absolute;
-  top: 0;
-  margin: 0 auto;
-  left: 0vw;
-  width: 50%;
-  right: 0;
+  left: 26vw;
+  width: 44vw;
   height: 100vh;
+  padding: 20px;
   overflow-x: auto;
-  z-index: 1;
-  transition: 3s ease-in-out; }
+  transition: 3s ease-in-out;
+  z-index: 100;
+  color: #D6DBE0; }
 
 ::-webkit-scrollbar {
   width: 5px;
-  transition: 3s ease-in-out; }
+  transition: 3s; }
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1; }
@@ -230,21 +240,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #606378; }
-
-.content-inside-wrapper {
-  padding: 2vw; }
-
-.content-inside-wrapper-hidden {
-  padding: 0;
-  position: relative;
-  left: -200vw;
-  transition: 2s ease; }
-
-.content-inside-wrapper-showing {
-  padding: 2vw;
-  position: relative;
-  left: 0;
-  transition: 6s ease; }
 
 .gallery-port {
   width: 43%;
